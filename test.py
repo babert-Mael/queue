@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-from queue import Queue
+from my_queue import Queue
 
 class QueueTests(unittest.TestCase):
     """
@@ -14,11 +14,11 @@ class QueueTests(unittest.TestCase):
         """
         self.queue=Queue()
     
-    def tearDown(self):
-        """
-        call this at the end of each tests, wheter the test fail or not
-        """
-        self.queue=Queue()
+#     def tearDown(self):
+#         """
+#         call this at the end of each tests, wheter the test fail or not
+#         """
+#         self.queue=Queue()
 
     def testEnqueue(self):
         """
